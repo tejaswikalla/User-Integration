@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fx-template-app</title>
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+
+   <link href="./src/css/landing-page.css" rel="stylesheet">
+   <link href="./src/css/main.css" rel="stylesheet">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+   <script type="text/javascript">
+  function geoFindMe() {
+
+  if (!navigator.geolocation){
+
+     return;
+   }
+   function success(position) {
+     var latitude  = position.coords.latitude;
+     var longitude = position.coords.longitude;
+
+
+    }
+
+
+    navigator.geolocation.getCurrentPosition(success);
+}
+  </script>
+
+  </head>
+  <body onload="geoFindMe()">
+
+    <div id="root"></div>
+  </body>
+  <script src="./app.js"></script>
+
+</html>
