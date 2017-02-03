@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 
+var Carousel = require('nuka-carousel');
 
   class Services extends Component {
 
@@ -63,7 +64,23 @@ import React, { Component } from 'react';
                     <p className="lead">Visit restaurants homepage and facebook page,call them,know their opening and closing times,etc</p>
                 </div>
                 <div className="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img className="img-responsive" src="images/food4.jpg" alt=""/>
+                      <Carousel dragging={true} speed={2} cellSpacing={20}>
+                      <div>
+                         <img  src="images/slider3.jpg" width="470" height="320"/>
+                      </div>
+                      <div>
+                         <img  src="images/slider1.jpg" width="470" height="320"/>
+                      </div>
+                      <div>
+                         <img  src="images/food_icon08.jpg" width="470" height="320"/>
+                      </div>
+                      <div>
+                         <img  src="images/food_icon04.jpg" width="470" height="320"/>
+                      </div>
+                      <div>
+                         <img src="images/food_icon05.jpg" width="470" height="320"/>
+                      </div>
+                    </Carousel>
                 </div>
             </div>
 
